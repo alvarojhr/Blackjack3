@@ -15,13 +15,13 @@ class HandTest {
 
     @Test
     void testGetValueNoCards() {
-        assertEquals(1, hand.getValue());
+        assertEquals(0, hand.getValue());
     }
 
     @Test
     void testGetValueSingleCard() {
         hand.addCard(new Card(Card.Suit.CLUBS, Card.Rank.ACE));
-        assertEquals(12, hand.getValue());
+        assertEquals(11, hand.getValue());
     }
 
     @Test
